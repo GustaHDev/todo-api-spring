@@ -18,6 +18,12 @@ import java.util.Objects;
 public class Task {
     public static final String TABLE_NAME = "task";
 
+    public interface CreateTask {
+    }
+
+    public interface UpdateTask {
+    }
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "id", unique = true)
